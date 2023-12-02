@@ -1,4 +1,45 @@
-p:empty:not(:focus):before {
-    content: attr(pPlaceholder);
-    color: rgb(183, 183, 183);
+#result {
+    color: #000000;
+}
+
+#result.cheese {
+    color: #527853;
+}
+
+h1#soldMessage:empty:not(:focus):before {
+    content: attr(sellMessage);
+    color: rgb(49, 49, 49);
+}
+
+.number {
+    padding: 5vw;
+}
+
+div.cheese {
+    margin: 10px;
+}
+
+button {
+    padding: 5px;
+    margin: 5px;
+}
+
+div.cheese {
+    height: 50px;
+}
+
+.addCheese {
+    padding: 20px;
+}
+
+.noCheese {
+    padding: 20px;
+}
+
+.scc {
+    padding: 20px;
+}
+
+.operator {
+    padding: 1vw;
 }
