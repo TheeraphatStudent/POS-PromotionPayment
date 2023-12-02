@@ -1,0 +1,4 @@
+p:empty:not(:focus):before {
+    content: attr(pPlaceholder);
+    color: rgb(183, 183, 183);
+}
