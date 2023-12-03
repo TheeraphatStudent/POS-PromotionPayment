@@ -94,7 +94,7 @@ class KumtoOrder {
 
     saveResult() {
         if (this.result === 0 || this.count === 0) {
-            
+
             const confirmResult = confirm("Please select an option before saving. Do you want to reset the count to 1?");
             if (confirmResult) {
                 this.count = 1;
@@ -112,10 +112,13 @@ class KumtoOrder {
         };
 
         this.history.push(orderDetails);
+
         this.totalCount = this.result * this.count;
         this.total += this.totalCount;
+
         document.getElementById("total").innerText = this.total;
         document.getElementById("soldMessage").innerText = `${this.option} has been sold!`;
+
         this.updateHistory();
         this.clearResult();
         this.count = 1;
